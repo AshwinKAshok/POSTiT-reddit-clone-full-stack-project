@@ -1,0 +1,5 @@
+.prj-post-row {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}
