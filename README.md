@@ -1,19 +1,25 @@
-﻿## POSTiT - place for all your thouths (An attempt to make something like reddit)
-
-Link to google doc for project description : `https://docs.google.com/document/d/12HoVG-Rc8hyZycuQuS97m-NgSjF48-zvHx-NjrI3wqw/edit?usp=sharing`
+﻿## POSTiT - place for all your thoughts (An attempt to make a reddit)
 
 ## 1. What it is??
 
 This is an attempt to use my knowledge of frontend and backend to do a full-stack web-development project.
-This project aims to implement many of the features that reddit. It provides the follwing
+This project aims to implement many of the features that reddit has. It provides the follwing
  features:
- * User registration and authentication.
+ * User registration and authentication (JWT token authentication).
  * To publish posts and letting other users like and comment on the post.
  * create private groups.
  * Create public posts visible to everyone.
  * Create private posts visible only to members of a given group.
+
+## 2. TECH STACK
+
+Frontend: React and Redux
+
+Backend: Java Spring.
+
+Database: AWS RDS
  
-## 2. USERS AND ROLE
+## 3. USERS AND ROLE
 
 There are three types of users:
 
@@ -31,7 +37,7 @@ Furthermore, the logged in user is able to create personal collections which are
 
 Administrators are collection owners. They are able to create, update, and delete owned collections, as well as add/remove any user to their collection.
 
-## 3. WEBAPP STRATEGY
+## 4. WEBAPP STRATEGY
 
 Our general architecture is the following:
 
@@ -50,7 +56,7 @@ authentication mechanism.
 The databases will store our user, post, comment and collection models. A database relation will record user posts and their corresponding commenters.
 The database used is a relational database for storing the user data.
 
-## 4. API USAGE AND API USAGE STRATEGY
+## 5. API USAGE AND API USAGE STRATEGY
 
 In addition to our the post created by the users of this application, the frontend 
 client also shows the latest posts available on the actual reddit site.
