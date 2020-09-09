@@ -45,7 +45,7 @@ Our general architecture is the following:
 
 The frontend is developed using react and redux.
 
-**3.2.  Services**
+**3.2.  Backend services**
 
 The services will handle interaction between client and database, as well as external API calls.
 The backend is implement using Java spring. The backend also provides authentication using JWT token based 
